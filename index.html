@@ -1,11 +1,25 @@
+<!-- 
+Cazhia Reese Lleva
+CMSC 100-U5L
+February 14, 2024
+
+This is an HTML page that contains my personal portfolio. HTML was used for review of its concepts on how to make a working webpage with proper styling and deployment.
+ -->
+
+
 <!DOCTYPE html>
-<!-- comment here -->
 
 <html> 
 <head>
-	
+	<!-- Declare page title -->
 	<title>Lleva's Portfolio</title>
+
+	<!-- Link several resources that will be used for the page. These are mostly recources for styling. -->
+
+	<!-- Link external CSS file -->
 	<link rel="stylesheet" type="text/css" href="style/portfolio-style.css">
+
+	<!-- Link fonts that are used in the page. These are all from Google Fonts and are open sourced. -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -14,86 +28,110 @@
 
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
+
+<!-- This is where the contents of the portfolio starts. -->
 <body>
 
+	<!-- A div specified for the navigation bar. This contains the logo and anchor tags that links to a specific section of the portfolio -->
 	<div class="flex-header" id= "navbar">
 		
-		<img style= "flex: -1" id= "logo" src="images/lleva.png">
+		<img id= "logo" src="images/lleva.png">
 		
 		<div id="buttons">
-		<a class="nav" href="#featured"> featured| </a>
-		<a class="nav" href="#projects"> projects| </a>
-		<a class = "nav" href="#skills-content"> skills| </a>
-		<a class = "nav"  href="#biography"> autobiography| </a>
-		<a class= "nav" id="contact" href="#footnote"> contacts|</a>
+			<a class="nav" href="#featured"> featured| </a>
+			<a class="nav" href="#projects"> projects| </a>
+			<a class = "nav" href="#skills-content"> skills| </a>
+			<a class = "nav"  href="#biography"> autobiography| </a>
+			<a class= "nav" id="contact" href="#footnote"> contacts|</a>
 		</div>
 	</div>
 
 
+	<!-- This div is to display a featured photo.  -->
 	<div id="featured"> <h2> FEATURED PHOTO</h2> 
-	<div class= "flex-featured" >
-		 <img id="img-feat" src="images/Heading.png">
-		
-		
+		<div class= "flex-featured" >
+			 <img id="img-feat" src="images/Heading.png">
 
+		</div>
 	</div>
-</div>
 	
+	<!-- This div is to display and describe featured projects of the engineer. -->
 	<div id="projects">
-	<div> <h2> FEATURED PROJECTS</h2> </div>
-	<div class="flex-featured">
+		<div> <h2> FEATURED PROJECTS</h2> </div>
+		<div class="flex-featured">
 
+			<div class="flex-item" id="project1">
+				<h3>Disaster Awareness Website</h3>
+				<p> As a capstone project for Senior High School. I made a website about disaster awareness tailored to my local community. It contains informative games, real-time updates, and relevant blog-like essays. <br><br> Access the website <a href="https:/reesecazhia.github.io"> here. </a></p>
+			</div>
 
-		<div class="flex-item" id="project1">
-			<h3>Disaster Awareness Website</h3>
-			<p> As a capstone project for Senior High School. I made a website about disaster awareness tailored to my local community. It contains informative games, real-time updates, and relevant blog-like essays. <br><br> Access the website <a href="https:/reesecazhia.github.io"> here. </a></p>
-		</div>
+			<div class="flex-item" id="project2">
+				<h3>TF-IDF Keyword Generator</h3>
+				<p> For a project in my CMSC 12 class in UPLB. I was able to utilize Python in order to make a keyword generator using the TF-IDF formula. This project also has an HTML page counterpart that displays the original articles and the generated keywords.</p>
+			</div>
 
-		<div class="flex-item" id="project2">
-			<h3>TF-IDF Keyword Generator</h3>
-			<p> For a project in my CMSC 12 class in UPLB. I was able to utilize Python in order to make a keyword generator using the TF-IDF formula. This project also has an HTML page counterpart that displays the original articles and the generated keywords.</p>
-		</div>
+			<div class="flex-item" id="project3">
+				<h3>Dimensyon Game!</h3>
+				<p> With two other members, I was able to make Dimensyon— a dungeon crawler RPG that was written using Java. Here, I was able to display my skills in OOP and used Java GUI in order to make a fully-developed video game as a project in CMSC 22. </p>
+			</div>
 
-		<div class="flex-item" id="project3">
-			<h3>Dimensyon Game!</h3>
-			<p> With two other members, I was able to make Dimensyon— a dungeon crawler RPG that was written using Java. Here, I was able to display my skills in OOP and used Java GUI in order to make a fully-developed video game as a project in CMSC 22. </p>
-		</div>
-
-		<div class="flex-item" id="project4">
-			<h3>Other projects</h3>
-			<p> I have more mini projects that I was able to do as a laboratory exercise or as a hobby! Feel free to contact me using the contact details below to know more. </p>
-		</div>
+			<div class="flex-item" id="project4">
+				<h3>Other projects</h3>
+				<p> I have more mini projects that I was able to do as a laboratory exercise or as a hobby! Feel free to contact me using the contact details below to know more. </p>
+			</div>
 		
+		</div>
 	</div>
-</div>
 
+
+	<!-- This div is to display both skilss and autobiography. -->
 	<div class="flex-featured" id="skills">
-		<div class="flex-item" id="skills-content">
-			<h2>Skills</h2>
-			<p> I am well-versed in Python, C, and Java. I also have basic and continuously improving knowledge about JavaScript and Assembly. I am able to make simple web pages and I have an eye for design. I can also work well with others when collaborating for projects. I do pretty well in my academics. I am also able to take on leadership roles and be an effective subordinate that has my own initiative. </p>
+
+		<div id="skill">
+			<h2>SKILLS</h2>
+			<div class="flex-item" id="skills-content">
+				
+				<p> I am well-versed in multiple programming languages, and I am mostly confident programming in Python, C, and Java. I also have some basic knowledge about JavaScript and Assembly— which I am currently working on improving. Moreover, I am able to make simple web pages and I have an eye for design. I am a team-player and can easily collaborate with others.  I am also able to take on leadership roles and able to be an effective subordinate that has my own initiative. </p>
+			</div>
 		</div>
 
-		<div class="flex-item" id="biography">
-			<h2>Autobiography</h2>
-			<p> I was born and raised in Tayabas City, Quezon Province on March 24, 2004. I studied elementary in Tayabas West Central School 1 and secondary in Luis Palad Integrated High School— both of which are inside Tayabas. I am currently an undergraduate student taking BS Computer Science at the University of the Philippines Los Banos. </p>
+		<div id="skill">
+			<h2>AUTOBIOGRAPHY</h2>
+			<div class="flex-item" id="biography">
+				
+				<p> I was born and raised in Tayabas City, Quezon Province on March 24, 2004. I studied elementary in Tayabas West Central School 1 and secondary in Luis Palad Integrated High School— both of which are inside Tayabas. I am currently an undergraduate student taking BS Computer Science at the University of the Philippines Los Banos. </p>
+			</div>
 		</div>
 
 	</div>
+
+	<!-- This div is for the footnotes -->
 
 	<div class="flex-footer" id="footnote">
-		<div id="footercontent">
-			<img src="logo2.png">
-			<p>Address: </p>
-			<p>Contact me at: </p>
-			<ul>
-				<li>E-mail: clleva@up.edu.ph</li>
-				<li>Contact Number: 0911111111111</li>
-			</ul>
 
-			<a href="#navbar"> Back to top</a>
-		</div>
+			<div> <img id="logo-img" src="images/logo2.png"> </div>
+			
+			<div class="contact">
+			
+				<p>Reach me through: </p>
+				<ul>
+					<li class="contact">Address: Ruby Street, Barangay Batong Malake, Los Banos, Laguna</li>
+					<li class="contact">E-mail: clleva@up.edu.ph</li>
+					<li class="contact">Contact Number: 09123456789</li>
+					<li class="contact">Personal Website: https://cazhiareese.github.io/</li>
+
+				</ul>
+
+				<a class="contact" id="backtop" href="#navbar"> Back to top</a>
+
+				<p id="copyright"> Designed by: Cazhia Reese Lleva (2024) | All images are made through Canva and designed by Lleva.</p>
+			</div>
 
 	</div>
 	
 </body>
+
+<!-- end of body -->
 </html>
+
+<!-- end of HTML file -->

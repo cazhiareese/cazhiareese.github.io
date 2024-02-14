@@ -1,135 +1,206 @@
-		.flex-header{
-			display: flex;
-			
-			justify-content: space-between;
+/*
+Cazhia Reese Lleva
+CMSC 100-U5L
+February 14, 2024
 
-			flex-direction: row;
-			flex-wrap:wrap;
-
-            background-color: #092635;
-            align-items: center;
-            align-content: center;
-			padding-right: 30px;
-
-		}
-
-		body{
-			margin: 0;
-			background-color: #092635;
-		}
-
-
-        .flex-featured {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            align-items: baseline;
-           	margin: 10px ;
-
-        }
-
-        #featured{
-        	background-color: #0D374D;
-        	
-        	padding-top: 10px;
-        	margin: 0;
-        }
-
-        h2{
-        	text-align: center;
-        	font-family: "Montserrat", sans-serif;
-        	font-size: 200%;
-        	color: #E5FFDA;
-        	margin: 0;
-        }
-
-         h3{
-        	text-align: center;
-        	font-family: "Montserrat", sans-serif;
-        	font-size: 160%;
-        	color:#E5FFDA;
-        	margin: 0;
-        }
-
-        .flex-item {
-
-        	height: 300px;
-			width: 300px;
-            border-style: solid;
-            border-width: 2px;
-            border-radius: 25px;
-            border-color: #278DFF;
-            margin: 10px;
-            box-shadow: 3px 3px #9D9D9D;
-            padding: 10px;
-            
-        }
-
-       #skills{
-       	margin-top: 40px;
-       }
-
-        #img-feat{
-        	align-self: center;
-        	height: 100%;
-        	width: 100%;
-        	margin: 0px;
-        	padding-top: 0;
-
-        	
-        }
-
-
-
-        .flex-footer{
-			display: flex;
-			align-content: flex-end;
-		
-			flex-direction: row;
-			border-style: solid;
-            border-width: 3px;
-            margin-top: 30px;
-		}
-
-		#skills-content{
-			height: 200px;
-			width: 700px;
-		}
-
-		#biography{
-			height: 200px;
-			width: 700px;
-		} 
-
-		#logo{
-			height:60px;
-			width: 180px;
-			float: left;
-			align-self: flex-start;
-
-			margin-right: auto;
-		}
-
+This is an external CSS file that is linked to index.html of cazhiareese.github.io. This file mostly contains styling used
+in order to make the portfolio user-friendly and presentable. 
+ */
 	
-		#projects{
-			background-color: #092635;
-		}
-		.nav{
-			color: #FFF;
-			font-family: "Poppins", sans-serif;
-			text-decoration: none;
-			font-size: 120%;
-			align-self: center;
-			margin: 10px;
-		}
+/*	Styling applied to whole body and all instance enclosed by specific tags*/
+	body
+	{
+		margin: 0;
+		background-color: #092635;
+	}
 
-		p{
-			color: #FFF;
-			font-family: "Poppins", sans-serif;
-			font-size: 100%;
-		}
+	h2
+	{
+		text-align: center;
+		font-family: "Montserrat", sans-serif;
+		font-size: 200%;
+		color: #E5FFDA;
+		margin: 0;
+	}
 
+	h3
+	{
+		text-align: center;
+		font-family: "Montserrat", sans-serif;
+		font-size: 160%;
+		color:#FFD180;
+		margin: 0;
+	}
+
+	p, li, a
+	{
+		color: #FFF;
+		font-family: "Poppins", sans-serif;
+		font-size: 100%;
+	}
+
+/*Styling for navigation bar*/
+
+/*This is a flexbox styling for the navigation bar div*/
+	.flex-header
+	{
+		display: flex;
+		justify-content: space-between;
+		flex-direction: row;
+		flex-wrap:wrap;
+		background-color: #092635;
+		align-items: center;
+		align-content: center;
+		padding-right: 30px;
+
+	}
+
+	#logo
+	{
+		height:65px;
+		width: 180px;
+		float: left;
+		align-self: flex-start;
+		margin-left: 20px;
+		margin-right: auto;
+	}
+
+	.nav
+	{
+		color: #FFF;
+		font-family: "Poppins", sans-serif;
+		text-decoration: none;
+		font-size: 120%;
+		align-self: center;
+		margin: 10px;
+	}
+
+/*end of styling for navigation bar	*/
+
+
+
+
+
+/*This class is used by 3 divs: featured-photo, projects, skills and biography. 
+Styling applies to all divs. Uses flex-blox styling.*/
+	.flex-featured 
+	{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		align-items: baseline;
+		margin: 10px ;
+
+	}
+/*	This class is used both by the featured projects div and the skills and biography div. 
+Styling applies to both.*/
+	.flex-item 
+	{
+
+		height: 300px;
+		width: 300px;
+		border-style: solid;
+		border-width: 2px;
+		border-radius: 25px;
+		border-color: #278DFF;
+		margin: 10px;
+		box-shadow: 3px 3px #9D9D9D;
+		padding: 10px;
+
+	}
+
+
+/*Specific styling for the featured photo	*/
+	#featured
+	{
+		background-color: #0D374D;
+
+		padding-top: 10px;
+		margin: 0;
+	}
+
+	#img-feat
+	{
+		align-self: center;
+		height: 100%;
+		width: 100%;
+		margin: 0px;
+		padding-top: 0;
+	}
+/*end of styling for the featured-photo (specific)*/
+	
+
+/*Specific styling for featured projects*/
+
+	#projects
+	{
+		background-color: #092635;
+		margin-top: 80px;
+	}
+/*End of specific styling for featured projects div*/
+
+
+/*Specific styling for the biography and skills div*/
+	#skills-content
+	{
+		height: 200px;
+		width: 680px;
+	}
+	
+	#skills
+	{
+		margin-top: 90px;
+		justify-content: space-between;
+		margin-left: 30px;
+		margin-right: 30px;
+	}
+
+	#biography
+	{
+		height: 200px;
+		width: 680px;
+	} 
+/*End of specific styling for biography and skills div*/
+	
+
+
+/*Styling for the footer div. Uses flexbox styling. */
+	.flex-footer
+	{
+		display: flex;
+		align-content: flex-end;
+		flex-direction: row;
+		justify-content: flex-start;
+		align-items: stretch;
+		background-color: #001C2B;
+		margin-top: 80px;
+	}
+
+	#logo-img
+	{
+		height:200px;
+		width: 220px;
+		align-self: flex-end;
+		margin-right: 70px;
+		margin-left: 50px;
+	}
+
+	#copyright
+	{
+		color: #737373;
+		font-family: "Poppins", sans-serif;
+		font-size: 70%;
+	}
+/*End of footer div styling.*/
+
+/*End of CSS File*/
+
+		
+
+
+
+		
 
 
 		
