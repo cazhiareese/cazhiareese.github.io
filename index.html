@@ -1,133 +1,81 @@
 <!DOCTYPE html>
 <!-- comment here -->
 
-<html>
+<html> 
 <head>
 	
 	<title>Lleva's Portfolio</title>
-	<style>
-		
+	<link rel="stylesheet" type="text/css" href="style/portfolio-style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-		.flex-header{
-			display: flex;
-			align-content: flex-start;
-			justify-content: space-evenly;
-			flex-direction: row;
-			border-style: solid;
-            border-width: 3px;
-            margin-bottom: 30px;
-            margin-top: 30px;
-		}
-        .flex-featured {
-            display: flex;
-            border-style: solid;
-            border-width: 3px;
-            margin-bottom: 30px;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            align-items: baseline;
-           	margin: 15px ;
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-        }
-
-        .flex-item {
-
-        	height: 200px;
-			width: 300px;
-            border-style: solid;
-            border-width: 2px;
-            border-color: red;
-            margin: 15px;
-        }
-
-       
-
-        #img-feat{
-        	height: 500px;
-        	width: 800px;
-        }
-
-        .flex-footer{
-			display: flex;
-			align-content: flex-end;
-		
-			flex-direction: row;
-			border-style: solid;
-            border-width: 3px;
-            margin-top: 30px;
-		}
-
-		#skills-content{
-			height: 200px;
-			width: 700px;
-		}
-
-		#biography{
-			height: 200px;
-			width: 700px;
-		}
-
-		
-
-    </style>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
 
 	<div class="flex-header" id= "navbar">
 		
-		<img src="logo.png">
-
-		<a href="#featured"> Featured </a>
-		<a href="#projects"> My Projects </a>
-		<a href="#skills-content"> My Skills </a>
-		<a href="#biography"> Autobiography </a>
-		<a href="#footnote"> Contact Me </a>
+		<img style= "flex: -1" id= "logo" src="images/lleva.png">
+		
+		<div id="buttons">
+		<a class="nav" href="#featured"> featured| </a>
+		<a class="nav" href="#projects"> projects| </a>
+		<a class = "nav" href="#skills-content"> skills| </a>
+		<a class = "nav"  href="#biography"> autobiography| </a>
+		<a class= "nav" id="contact" href="#footnote"> contacts|</a>
+		</div>
 	</div>
 
-	<div> <h2> Featured Photo</h2> </div>
-	<div class= "flex-featured" id="fetaured">
 
-		<div class="flex-item" id="img-feat"> <img src="featured-photo.png"></div>
+	<div id="featured"> <h2> FEATURED PHOTO</h2> 
+	<div class= "flex-featured" >
+		 <img id="img-feat" src="images/Heading.png">
+		
 		
 
 	</div>
-
-	<div> <h2> Featured Projects</h2> </div>
-	<div class="flex-featured" id="projects">
+</div>
+	
+	<div id="projects">
+	<div> <h2> FEATURED PROJECTS</h2> </div>
+	<div class="flex-featured">
 
 
 		<div class="flex-item" id="project1">
-			<h3>Project 1</h3>
-			<p> lorem ipsum dolor </p>
+			<h3>Disaster Awareness Website</h3>
+			<p> As a capstone project for Senior High School. I made a website about disaster awareness tailored to my local community. It contains informative games, real-time updates, and relevant blog-like essays. <br><br> Access the website <a href="https:/reesecazhia.github.io"> here. </a></p>
 		</div>
 
 		<div class="flex-item" id="project2">
-			<h3>Project 2</h3>
-			<p> lorem ipsum dolor </p>
+			<h3>TF-IDF Keyword Generator</h3>
+			<p> For a project in my CMSC 12 class in UPLB. I was able to utilize Python in order to make a keyword generator using the TF-IDF formula. This project also has an HTML page counterpart that displays the original articles and the generated keywords.</p>
 		</div>
 
 		<div class="flex-item" id="project3">
-			<h3>Project 3</h3>
-			<p> lorem ipsum dolor </p>
+			<h3>Dimensyon Game!</h3>
+			<p> With two other members, I was able to make Dimensyon— a dungeon crawler RPG that was written using Java. Here, I was able to display my skills in OOP and used Java GUI in order to make a fully-developed video game as a project in CMSC 22. </p>
 		</div>
 
 		<div class="flex-item" id="project4">
-			<h3>Project 4</h3>
-			<p> lorem ipsum dolor </p>
+			<h3>Other projects</h3>
+			<p> I have more mini projects that I was able to do as a laboratory exercise or as a hobby! Feel free to contact me using the contact details below to know more. </p>
 		</div>
 		
 	</div>
+</div>
 
 	<div class="flex-featured" id="skills">
 		<div class="flex-item" id="skills-content">
-			<h3>Skills</h3>
-			<p> lorem ipsum dolor </p>
+			<h2>Skills</h2>
+			<p> I am well-versed in Python, C, and Java. I also have basic and continuously improving knowledge about JavaScript and Assembly. I am able to make simple web pages and I have an eye for design. I can also work well with others when collaborating for projects. I do pretty well in my academics. I am also able to take on leadership roles and be an effective subordinate that has my own initiative. </p>
 		</div>
 
 		<div class="flex-item" id="biography">
-			<h3>Autobiography</h3>
-			<p> lorem ipsum dolor </p>
+			<h2>Autobiography</h2>
+			<p> I was born and raised in Tayabas City, Quezon Province on March 24, 2004. I studied elementary in Tayabas West Central School 1 and secondary in Luis Palad Integrated High School— both of which are inside Tayabas. I am currently an undergraduate student taking BS Computer Science at the University of the Philippines Los Banos. </p>
 		</div>
 
 	</div>

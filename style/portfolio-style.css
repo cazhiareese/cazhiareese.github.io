@@ -1,0 +1,137 @@
+		.flex-header{
+			display: flex;
+			
+			justify-content: space-between;
+
+			flex-direction: row;
+			flex-wrap:wrap;
+
+            background-color: #092635;
+            align-items: center;
+            align-content: center;
+			padding-right: 30px;
+
+		}
+
+		body{
+			margin: 0;
+			background-color: #092635;
+		}
+
+
+        .flex-featured {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: baseline;
+           	margin: 10px ;
+
+        }
+
+        #featured{
+        	background-color: #0D374D;
+        	
+        	padding-top: 10px;
+        	margin: 0;
+        }
+
+        h2{
+        	text-align: center;
+        	font-family: "Montserrat", sans-serif;
+        	font-size: 200%;
+        	color: #E5FFDA;
+        	margin: 0;
+        }
+
+         h3{
+        	text-align: center;
+        	font-family: "Montserrat", sans-serif;
+        	font-size: 160%;
+        	color:#E5FFDA;
+        	margin: 0;
+        }
+
+        .flex-item {
+
+        	height: 300px;
+			width: 300px;
+            border-style: solid;
+            border-width: 2px;
+            border-radius: 25px;
+            border-color: #278DFF;
+            margin: 10px;
+            box-shadow: 3px 3px #9D9D9D;
+            padding: 10px;
+            
+        }
+
+       #skills{
+       	margin-top: 40px;
+       }
+
+        #img-feat{
+        	align-self: center;
+        	height: 100%;
+        	width: 100%;
+        	margin: 0px;
+        	padding-top: 0;
+
+        	
+        }
+
+
+
+        .flex-footer{
+			display: flex;
+			align-content: flex-end;
+		
+			flex-direction: row;
+			border-style: solid;
+            border-width: 3px;
+            margin-top: 30px;
+		}
+
+		#skills-content{
+			height: 200px;
+			width: 700px;
+		}
+
+		#biography{
+			height: 200px;
+			width: 700px;
+		} 
+
+		#logo{
+			height:60px;
+			width: 180px;
+			float: left;
+			align-self: flex-start;
+
+			margin-right: auto;
+		}
+
+	
+		#projects{
+			background-color: #092635;
+		}
+		.nav{
+			color: #FFF;
+			font-family: "Poppins", sans-serif;
+			text-decoration: none;
+			font-size: 120%;
+			align-self: center;
+			margin: 10px;
+		}
+
+		p{
+			color: #FFF;
+			font-family: "Poppins", sans-serif;
+			font-size: 100%;
+		}
+
+
+
+		
+
+
